@@ -31,4 +31,4 @@ CUDA_VISIBLE_DEVICES=0 python3 demo.py  \
 
 # Acknowledgement
 
-Some parts of the code are insipired and borrowed from [ConDor](https://github.com/brown-ivl/ConDor) and [Pointnet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch). We thank the authors for providing the source code.
+Some parts of the code are insipired and borrowed from [ConDor](https://github.com/brown-ivl/ConDor),[Sinv](https://github.com/junzhezhang/shape-inversion) and [Pointnet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch). We thank the authors for providing the source code.
