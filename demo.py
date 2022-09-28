@@ -3,6 +3,7 @@ import os
 import os.path as osp
 import numpy as np
 import open3d as o3d
+from tqdm import tqdm
 
 from arguments import Arguments
 from models.scarp import SCARP
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     os.makedirs('./checkpoints',exist_ok=True)
     load_ckpt = args.ckpt_load if args.ckpt_load is not None else None
     assert load_ckpt != None, print('Invalid Checkpoint Path. Aborting.')
-    print(f"checkpoint is :{load_ckpt}")
+    print(f"checkpoint is: {load_ckpt}")
     
     # load model
     model = SCARP(args)
@@ -60,7 +61,7 @@ if __name__ == '__main__':
     pcd_path = os.path.join(args.demo_dataset_path,args.class_choice)
 
     with torch.no_grad():
-        for path in os.listdir(pcd_path):
+        for _iter,path in enumerate(tqdm(os.listdir(pcd_path),desc="Inference")):
             if path.endswith('_output.pcd') or not path.endswith('_input.pcd'):
                 continue
 
@@ -79,9 +80,17 @@ if __name__ == '__main__':
             output_pcd = rotated_pcd + translation
 
             # save pointcloud
+            # output completed pcd
             save_path = path.split('_')[0] + '_output.pcd'
             save_path = os.path.join(pcd_path,save_path)
             pcd.points = o3d.utility.Vector3dVector(output_pcd.squeeze(dim=0).cpu().numpy())
             pcd.colors = o3d.utility.Vector3dVector(np.ones_like(pcd.points) * [0.5, 0.5, 0.5])
             o3d.io.write_point_cloud(save_path,pcd)
+
+            #outputpcd combined with partial input pcd
+            save_path = path.split('_')[0] + '_combined.pcd'
+            save_path = os.path.join(pcd_path,save_path)
+            pcd2 = o3d.io.read_point_cloud(f)
+            pcd2.colors = o3d.utility.Vector3dVector(np.ones_like(pcd2.points) * [1, 0, 0])
+            o3d.io.write_point_cloud(save_path,pcd+pcd2)
 
