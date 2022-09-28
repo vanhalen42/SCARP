@@ -20,7 +20,7 @@ class Arguments:
         
         ### others
         self._parser.add_argument('--gpu', type=int, default=0, help='GPU number to use.')
-        self._parser.add_argument('--ckpt_load', type=str, default=None, help='Checkpoint name to load. (default:None)')
+        self._parser.add_argument('--ckpt_load', type=str, default='./checkpoints/plane.pt', help='Checkpoint name to load. (default:None)')
     
     def parser(self):
         return self._parser
