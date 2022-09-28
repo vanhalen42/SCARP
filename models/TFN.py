@@ -76,8 +76,6 @@ class TFN(torch.nn.Module):
         self.Inv_SphericalHarmonicsEval = SphericalHarmonicsEval(l_max=self.l_max_out[i], base=self.S2)
         self.Fwd_SphericalHarmonicsCoeffs = SphericalHarmonicsCoeffs(l_max=self.l_max_out[i], base=self.S2)
 
-
-        
     def forward(self, x):
         """
         Input:

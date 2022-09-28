@@ -2,7 +2,6 @@ import torch.nn as nn
 import torch
 from spherical_harmonics.spherical_cnn import SphericalHarmonicsCoeffs
 
-
 def apply_layers(x, layers):
     y = dict()
     # print(x.keys())

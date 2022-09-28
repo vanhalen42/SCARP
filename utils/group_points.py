@@ -1,8 +1,6 @@
 import torch
 import numpy as np
 
-
-
 def patches_radius(radius, sq_norm):
     batch_size = sq_norm.shape[0]
     rad = radius
@@ -21,7 +19,6 @@ def patches_radius(radius, sq_norm):
             rad = torch.mean(rad[:, :i], dim=-1, keepdims=False)
         rad = torch.reshape(rad, (batch_size, 1, 1))
     return rad
-
 
 def gather_idx(x, idx):
 
@@ -50,7 +47,6 @@ def gather_idx(x, idx):
     # print(idx[..., 1].shape, out.shape)
 
     return out
-
 
 def compute_patches_(source, target, sq_distance_mat, num_samples, spacing, radius, source_mask=None):
     batch_size = source.shape[0]

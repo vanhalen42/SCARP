@@ -1,6 +1,5 @@
 import argparse
 
-
 class Arguments:
     def __init__(self, stage='demo'):
         self._parser = argparse.ArgumentParser(description='Arguments for SCARP Demo')
