@@ -127,5 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-checkpoints/
+# Repository Specific
+checkpoints/*
+!checkpoints/.gitkeep
