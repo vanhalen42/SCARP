@@ -25,5 +25,10 @@ To run a demo run the following command
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python3 demo.py  \
+--class_choice plane \
 --ckpt_load checkpoints/plane.pt
 ```
+
+# Acknowledgement
+
+Some parts of the code are insipired and borrowed from [ConDor](https://github.com/brown-ivl/ConDor) and [Pointnet++](https://github.com/yanx27/Pointnet_Pointnet2_pytorch). We thank the authors for providing the source code.
