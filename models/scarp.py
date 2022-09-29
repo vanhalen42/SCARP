@@ -92,7 +92,7 @@ class SCARP(nn.Module):
         translation = torch.stack([translation[:, 2], translation[:, 0], translation[:, 1]], dim = -1)
         T.append(translation)
         
-        # Combining TFN globally invarian features with pointnet++ features
+        # Combining TFN globally invariant features with pointnet++ features
         concatenated_features = torch.cat((pointnet2_features, tfn_global_invarient_features), dim=1) # B x 256
         reduced_features = self.reduction_mlp(concatenated_features) # B x 128
         reduced_features = self.reduction_layer(reduced_features) # B x 128
