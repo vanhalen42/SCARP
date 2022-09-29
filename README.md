@@ -2,7 +2,12 @@
 SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping
 
 This repository contains the demo code for the paper submitted to ICRA, titled "*SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping*"
-
+### Creating the Anaconda/Miniconda environment
+Make sure you have Anaconda or Miniconda installed before you proceed to load this environment.
+```
+conda env create -f environment.yml
+conda activate SCARP
+```
 ## Pretrained Checkpoints
 Pretrained checkpoints for the demo can be downloaded from [here](https://drive.google.com/drive/folders/137CSxW1AORyo2zG6BRFpd-UpJPLE86r2)
 
