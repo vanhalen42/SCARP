@@ -33,6 +33,7 @@ CUDA_VISIBLE_DEVICES=0 python3 demo.py  \
 --class_choice plane \
 --ckpt_load checkpoints/plane.pt
 ```
+The outputs are stored in the `demo_data/<class_choice>` directory
 
 # Acknowledgement
 
