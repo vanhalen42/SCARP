@@ -53,7 +53,7 @@ The outputs are stored in the `demo_data/<class_choice>` directory
 
 ## Real World Results
 <img src='./results/real1.gif'>
-<img src='./results/real2.gif>
+<img src='./results/real2.gif'>
 
 ## Acknowledgement
 
