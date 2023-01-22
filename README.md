@@ -13,7 +13,7 @@
 This is the official implementation of the paper "*SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping*" **accepted** at ICRA 2023.
 
 <img src="./results/result1.gif">
-<img src="./results/result2.gif">
+<!-- <img src="./results/result2.gif"> -->
 
 For more results, information, and details visit our [**project page**](https://bipashasen.github.io/scarp) and read our [**paper**](https://arxiv.org/abs/2301.07213).
 
@@ -53,7 +53,7 @@ The outputs are stored in the `demo_data/<class_choice>` directory
 
 ## Real World Results
 <img src='./results/real1.gif'>
-<img src='./results/real2.gif'>
+<!-- <img src='./results/real2.gif'> -->
 
 ## Acknowledgement
 
