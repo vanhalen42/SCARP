@@ -6,28 +6,17 @@
 [Brojeshwar Bhowmick](https://scholar.google.co.in/citations?user=Eqf8NrEAAAAJ&hl=en)<sup>2</sup>,
 [Srinath Sridhar](https://cs.brown.edu/people/ssrinath/)<sup>3</sup>,
 [Madhava Krishna](https://www.iiit.ac.in/people/faculty/mkrishna/)<sup>1</sup><br>
-<sup>1</sup>International Institute of Information Technology, Hyderabad, <sup>2</sup>TCS Research India, <sup>3<sup>Brown University
+<sup>1</sup>International Institute of Information Technology, Hyderabad, <sup>2</sup>TCS Research India, <sup>3</sup>Brown University
 
 <sup>\*</sup>denotes equal contribution
 
-This is the official implementation of the paper "FaceOff: A Video-to-Video Face Swapping System" **published** at WACV 2023.
+This is the official implementation of the paper "*SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping*" **accepted** at ICRA 2023.
 
-<img src="./results/v2v_faceswapping_looped2.gif">
-<img src="./results/v2v_results3.gif">
-<img src="./results/v2v_more_result.gif">
+<img src="./results/result1.gif">
+<img src="./results/result2.gif">
 
-For more results, information, and details visit our [**project page**](http://cvit.iiit.ac.in/research/projects/cvit-projects/faceoff) and read our [**paper**](https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_FaceOff_A_Video-to-Video_Face_Swapping_System_WACV_2023_paper.pdf). Following are some outputs from our network on the V2V Face Swapping Task.
+For more results, information, and details visit our [**project page**](https://bipashasen.github.io/scarp) and read our [**paper**](https://arxiv.org/abs/2301.07213).
 
-
-## Results on same identity
-<img src="./results/v2v_same_identity2.gif">
-
-<!-- ## Comparisons 
-
-We compare our method against two SOTA face-swapping systems, FSGAN and Motion Co-Seg
-
-<img src="./results/v2v_comparisons1.gif">
-<img src="./results/v2v_comparisons31.gif"> -->
 
 ## Getting started
 
