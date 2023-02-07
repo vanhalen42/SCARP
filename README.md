@@ -12,7 +12,7 @@
 
 This is the official implementation of the paper "*SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping*" **accepted** at ICRA 2023.
 
-**This work was featured as "*The Publication of the Week*" by Weekly Robotics [**here**](https://www.weeklyrobotics.com/)**
+**This work was featured as "*The Publication of the Week*" by Weekly Robotics [**here**](https://www.weeklyrobotics.com/weekly-robotics-231)**
 
 <img src="./results/result1.gif">
 <!-- <img src="./results/result2.gif"> -->
