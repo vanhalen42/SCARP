@@ -39,6 +39,6 @@ class Pointnet(nn.Module):
 
 
 if __name__ == '__main__':
-    x = torch.rand((32,2048,3))
-    model = Pointnet()
+    x = torch.rand((32,3, 2048))
+    model = Pointnet(0)
     model(x)
