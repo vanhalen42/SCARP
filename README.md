@@ -65,15 +65,15 @@ Some parts of the code are insipired and borrowed from [ConDor](https://github.c
 ## Citation
 If you find our work useful in your research, please cite:
 ```
-@misc{https://doi.org/10.48550/arxiv.2301.07213,
-  doi = {10.48550/ARXIV.2301.07213},  
-  url = {https://arxiv.org/abs/2301.07213},
-  author = {Sen, Bipasha and Agarwal, Aditya and Singh, Gaurav and B., Brojeshwar and Sridhar, Srinath and Krishna, Madhava},
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), Robotics (cs.RO), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping},
-  publisher = {arXiv},
-  year = {2023},
-  copyright = {Creative Commons Attribution 4.0 International}
+@INPROCEEDINGS{10160365,
+  author={Sen, Bipasha and Agarwal, Aditya and Singh, Gaurav and B., Brojeshwar and Sridhar, Srinath and Krishna, Madhava},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={SCARP: 3D Shape Completion in ARbitrary Poses for Improved Grasping}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={3838-3845},
+  doi={10.1109/ICRA48891.2023.10160365}
 }
 ```
 
